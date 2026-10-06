@@ -19,7 +19,7 @@ jobs:
           node-version: '20'
 
       - name: Установка зависимостей проекта
-        run: npm ci
+        run: npm install
 
       - name: Запуск статического анализа (Линтера)
         run: npx eslint .
