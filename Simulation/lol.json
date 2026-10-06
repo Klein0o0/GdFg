@@ -37,3 +37,5 @@ def main():
     print("Обработка завершена успешно. Пользователей в буфере: " + str(GLOBAL_USER_COUNTER))
 if __name__ == "__main__":
     main()
+	
+	
