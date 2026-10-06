@@ -19,7 +19,9 @@ jobs:
           node-version: '20'
 
       - name: Установка зависимостей проекта
+        working-directory: .github/workflows
         run: npm install
 
-      - name: Запуск статического анализа (Линтера)
-        run: npx eslint .
+      - name: Запуск линтера
+        working-directory: .github/workflows
+        run: npm run lint
